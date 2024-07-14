@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function fn1(){
+            var cd1 = document.getElementById("rd1");
+            var cd2 = document.getElementById("rd2");
+
+
+           if(rd1.checked==true)
+             alert("The channel is selected is:"+cd1.value);
+            else if(rd2.checked==true)
+            alert("the channel is selected is:"+cd2.value);
+         else
+         alert("No button is clicked"); 
+        }
+    </script>
+</head>
+<body>
+    <input id="rd1" name="grp1" type="radio" value="simple snippets">simple snippets</input>
+    <br>
+    <input id="rd2" name="grp1" type="radio" value="telusuko learnings">telusuko learnings </input>
+    <br>
+    <button onclick="fn1()"> clickme</button>
+    
+</body>
+</html>

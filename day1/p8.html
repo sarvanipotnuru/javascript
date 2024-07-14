@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function fn(){
+            var username = document.getElementById("uname");
+            var password = document.getElementById("pass");
+            if(uname.value.trim()=="")
+            {
+               alert("Not allowed"); 
+               return false;
+               document.getElementById("lbuser").style.visibility="visible";
+            }
+            else if(password.value.trim().length<5||password.value.trim()=="");
+            {
+                alert("Not allowed");
+                return false;
+            }
+        
+                return true;
+            
+            
+        
+        }
+    </script>
+</head>
+<body>
+   <form action="p3.html" onclick="return fn();">
+<input type="text" id="uname" placeholder="username">
+<label id="lbuser" style="color: red; visibility: hidden;">Invalid</label>
+<input type="password" id="pass" placeholder="password">
+<button type="submit">submit</button>
+</form> 
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function validate(){
+            var name = document.getElementById("uname");
+            var pasword = document.getElementById("pass");
+        } 
+        if(name.value =="" && password.value ==""){
+            alert("Please fill all the fields");
+            return false;
+        }
+        else{
+              true;
+        }
+    </script>
+</head>
+<body>
+    <form onsubmit=" return validate()" action="message.html" >
+        <input id="uname"  placeholder="username" type="text"><br><br>
+        <input id ="pass" placeholder="password"  type="text"><br><br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
