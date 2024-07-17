@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        var opacity =0;
+        var intervalID=0;
+        function fn(){
+            intervalID=setInterval(hide,1000);
+        }
+        function fn1(){
+            intervalID=setInterval(show,1000);
+        }
+        function show(){
+            var img = document.getElementById("img1");
+            opacity = Number(window.getComputedStyle(img).getPropertyValue("opacity"));
+            if(opacity<1){
+                opacity=opacity+0.1;
+                img.style.opacity=opacity;
+            }
+            else{
+                clearInterval(intervalID);
+            }
+        }
+        function hide(){
+            var img = document.getElementById("img1");
+            opacity = Number(window.getComputedStyle(img).getPropertyValue("opacity"));
+            if(opacity>0){
+                opacity=opacity-0.1;
+                img.style.opacity=opacity;
+            }
+            else{
+                clearInterval(intervalID);
+            }
+        }
+
+    </script>
+</head>
+<body>
+   <button onclick="fn()" id="btnAdd">Fade out</button> 
+   <br>
+   <img  id ="img1"  src="vinayaka.jpeg" alt="" />
+   <button onclick="fn1()" id="btnstop"> Fade in</button>
+</body>
+</html>

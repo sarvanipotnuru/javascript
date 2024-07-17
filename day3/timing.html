@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- setTimeout()allows you to execute statements Once after an interval
+    clearTimeout()method clears a timer set with the set with the setTimeout method
+    setInterval() allows you to execute statements repeatdly after an interval
+    clearInterval() method clears a timer set with the setInterval()method  -->
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var ID = 0;
+        var seconds = 0;
+        function printmsg(){
+              var msg = document .getElementById("op").innerHTML= seconds+"Seconds";
+              seconds ++;
+        }
+        function fn(){
+            ID = window.setInterval(printmsg,1000);
+        }
+        function fn1(){
+            window.clearInterval(ID);
+        } 
+        
+    </script>
+</head>
+<body>
+    <button onclick ="fn()" id="btnAdd">Start</button>
+    <h2 id="op"> Hi there</h2>
+    <button onclick ="fn1()" id="btnStop">Stop</button>
+</body>
+</html>
