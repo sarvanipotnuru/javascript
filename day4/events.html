@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="events.css">
+   
+</head>
+
+<body>
+    <h2>Events in jQuery</h2>
+    <p>Outside the div</p>
+    <div class="container" id="first">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem incidunt adipisci repellendus aut
+            quasi libero! Vitae nihil expedita, consequatur non fuga temporibus eaque quo iure dolor quasi, error
+            similique reprehenderit?</p>
+    </div>
+    <div class="container" id="second">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat quas ullam sunt, animi sint nemo.</p>
+    </div>
+    <div class="container" id="third">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+        <ul>
+            <li>tea</li>
+            <li>coffe</li>
+            <li>milk</li>
+        </ul>
+    </div>
+    <div class="cube">
+        <h1>CUBE</h1>
+    </div>
+    <br>
+<button  id="btn">Click Me</button>
+<button id="btn1">Click Here</button>
+<button id="btn2">Click </button>
+</body>
+<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+    crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function(){
+            // // $("#btn").mouseenter(fn1);
+            // // // $("#btn").mouseleave(fn2);
+            //  $("#btn1").hover(fn1 ,fn2);
+            $("#btn").click(function(){
+                $(".cube").animate({
+                    left:"150px",
+                    opacity:1,
+                    height: "300px",
+                    width: "300px",
+
+
+                },2000)
+                
+        //     $("#first").hide();
+        //     $("#second").slideUp();
+        // });
+        //   $("#btn1").click(function(){
+        //     // $("#second").show();
+        // });
+        // $("#btn2").click(function(){
+        //     $("#third").fadeToggle();
+         })
+
+
+        });
+
+
+
+    // function fn1(){
+    //     //  $(".container").fadeIn();
+       
+        
+
+    // }
+    // function fn2(){
+    // //     $(".container").fadeOut();
+    //  }
+  
+    
+      
+    </script>
+
+
+</html>

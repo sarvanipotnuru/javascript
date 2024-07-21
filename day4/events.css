@@ -1,0 +1,16 @@
+.container{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ border: 2px solid black;
+    border-radius: 1px;
+    color: blueviolet; 
+    margin: 20px;
+    padding: 20px;
+}
+.cube{
+    width: 100px;
+    height: 100px;
+    color:black;
+    background-color:orangered;
+    padding: 25px;
+    position: relative;
+}

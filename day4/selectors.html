@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<!-- jquery selectors allow you to select and manipulate HTML element 
+jquery selectors are used to find (or select) HTML elements based on their name ,id, classes types, attributes,
+values of attributes and much more Its based on the existing CSS selectors and in addition it has s  -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="selectors.css">
+</head>
+
+<body>
+    <h2> Selectors up jQuery</h2>
+    <h2 id="heading1"> Selectors up jQuery</h2>
+    <div id="first" class="para">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo libero tempore voluptas facilis! Debitis
+            deserunt at consectetur harum voluptates aut reiciendis accusantium, minima impedit, totam ab ipsam.
+            Veritatis, qui consequatur?</p>
+    </div>
+    <div id="second" class="para">
+           <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+<div id="third" class="para">
+<ul>
+    <li>tea</li>
+    <li>coffe</li>
+    <li>milk</li>
+</ul>
+    </div>
+
+    <button onclick="fn1()" id="btn">Click me</button>
+
+</body>
+<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+    crossorigin="anonymous"></script>
+<script>
+    function fn1() {
+    //     $("h2").fadeToggle();
+    //     $("#heading").fadeToggle(2000);
+        $(".para").fadeToggle(2000);
+    $("#first").fadeToggle();
+     }
+
+</script>
+
+</html>

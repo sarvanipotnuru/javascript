@@ -1,0 +1,11 @@
+h2{
+    font-family: 'Times New Roman', Times, serif;
+    color: blue;
+}
+.para{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ border: 2px solid black;
+    border-radius: 1px;
+    color: blueviolet; 
+    margin: 2px;
+}
