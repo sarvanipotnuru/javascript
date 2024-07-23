@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="jquery-ui.css">
+    <link rel="stylesheet" href="default.css">
+    <link rel="stylesheet" href="jquery-ui.structure.css">
+    <link rel="stylesheet" href="jquery-ui.theme.css">
+</head>
+
+<body>
+    <h3>Accordian of jquery UI</h3>
+    <div id="container">
+        <h4>Sarvani</h4>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas optio dicta iusto eligendi necessitatibus
+            animi ea labore perspiciatis ipsum reprehenderit?</p>
+        <h4>Shivani</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia deleniti sed fuga vitae dolorem, impedit
+            enim nulla ratione quisquam animi.</p>
+        <h4>Sravatnthi</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid voluptatum alias obcaecati doloremque, sint
+            praesentium aperiam? Eum fuga consequatur officia.</p>
+
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="jquery-ui.js"></script>
+    <script>
+$("#container").accordion({
+    collapsible: true,
+  event:"click",
+  active:1
+});
+    </script>
+</body>
+
+</html>

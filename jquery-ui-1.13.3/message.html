@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="jquery-ui.css">
+    <link rel="stylesheet" href="default.css">
+    <link rel="stylesheet" href="jquery-ui.structure.css">
+    <link rel="stylesheet" href="jquery-ui.theme.css">
+</head>
+<body>
+    <h2>Message Box in jquery UI</h2>
+    <div id="container" class="mydivs">
+        <h3>Hello welocme</h3>
+        <br>
+        <button id="btn">Click to show Message Box</button>
+    </div>
+    <br>
+    <div id="mydiv" class="mydivs" title="Messagebox">
+<h3>This is dummy title</h3>
+<img src="images/ui-icons_cc0000_256x240.png" width="200px">
+<br>
+<h3>Autocomplete Widget in Jquery</h3>
+<div id="mydiv1">
+<label><b>Enter your Favourite city</b></label>
+<input type="text" name="" id="citytextbox">
+</div>
+<button>Click Me</button>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+    crossorigin="anonymous"></script>
+   <script src="jquery-ui.js"></script>
+   <script>
+$("#btn").click(function(){
+    $("#mydiv").dialog({
+        title:"Custom Message Box",
+        draggable:false,
+        resizeable:true,
+        height:300,
+        width:300,
+        modal:true
+     });
+});
+var mycities =["Mumbai","Hyderabad","Banglore","Chennai"];
+$("#citytextbox").autocomplete({
+    source:mycities
+})
+   </script>   
+</body>
+</html>

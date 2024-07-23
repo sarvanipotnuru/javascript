@@ -1,0 +1,16 @@
+#container{
+    border:2px solid rgb(214, 195, 232) ;
+    margin:20px;
+    padding: 20px;
+}
+#mydiv{
+    border: 2px solid plum;
+    margin: 20px;
+    padding: 20px;
+
+}
+#mydiv1{
+    border: 2px solid plum;
+    margin: 20px;
+    padding: 20px;
+ }
